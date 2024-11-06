@@ -29,9 +29,17 @@ body {
     background-color: white;
     font-size: 17px;
     font-weight: 600;
+    transition: all 0.3s ease;
+
     &:nth-child(6) {
       font-size: 30px;
       font-weight: bold;
+    }
+
+    &:hover {
+      background-color: #f08a75;
+      color: white;
+      transform: translateY(-2px);
     }
   }
 }
@@ -51,6 +59,12 @@ body {
   gap: 20px;
   span {
     cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:not(.section4):hover {
+      color: #f08a75;
+      transform: translateY(-1px);
+    }
   }
   .section4 {
     color: rgb(202, 202, 202);
@@ -100,10 +114,30 @@ body {
           cursor: pointer;
           color: #ddd;
           padding-bottom: 0;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: #f08a75;
+            transform: scale(1.2);
+          }
+
+          &:active {
+            transform: scale(0.9);
+          }
         }
         .main2_item3_1_3 {
           cursor: pointer;
           padding-bottom: 0;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: #f08a75;
+            transform: scale(1.2);
+          }
+
+          &:active {
+            transform: scale(0.9);
+          }
         }
       }
       .main2_item3_2 {
@@ -115,6 +149,18 @@ body {
         background-color: #f08a75;
         color: #ffffff;
         border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: darken(#f08a75, 10%);
+          transform: translateY(-3px);
+          box-shadow: 0 5px 15px rgba(240, 138, 117, 0.4);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+        }
       }
     }
   }
@@ -138,6 +184,21 @@ body {
     font-weight: bold;
     .main_item {
       cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 15px 0;
+
+      &:hover {
+        background-color: rgba(240, 138, 117, 0.1);
+        padding-left: 20px;
+      }
+
+      span:last-child {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover span:last-child {
+        transform: rotate(45deg);
+      }
     }
     .main4_item1 {
       margin-bottom: 20px;
